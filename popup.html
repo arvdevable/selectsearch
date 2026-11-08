@@ -1,0 +1,26 @@
+<!-- popup.html -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SelectSearch</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <label for="search-engine">Search with</label>
+    <select id="search-engine">
+        <option value="google">Google</option>
+        <option value="ddg">DuckDuckGo</option>
+        <option value="bing">Bing</option>
+        <option value="yahoo">Yahoo!</option>
+        <option value="yandex">Yandex</option>
+    </select>
+    <label class="checkbox-label">
+        <input id="define-single-words" type="checkbox">
+        <span>Add <code>`define "..."`</code> for one-word selections</span>
+    </label>
+    <script src="popup.js"></script>
+</body>
+</html>

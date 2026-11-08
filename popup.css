@@ -1,0 +1,40 @@
+body {
+    width: 190px;
+    margin: 0;
+    padding: 12px;
+    color: #222;
+    background: #fff;
+    font: 13px system-ui, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    font: inherit;
+}
+
+select:focus-visible {
+    outline: 2px solid #4c8bf5;
+    outline-offset: 1px;
+}
+
+.checkbox-label {
+    display: flex;
+    gap: 7px;
+    margin-top: 12px;
+    line-height: 1.35;
+}
+
+.checkbox-label input {
+    flex: 0 0 auto;
+    margin: 2px 0 0;
+}
+
+code {
+    font-size: 12px;
+}

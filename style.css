@@ -1,0 +1,35 @@
+/* style.css */
+
+#selectsearch-button {
+    position: absolute;
+    z-index: 2147483647;
+
+    max-width: 320px;
+    padding: 9px 13px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: #ffffff;
+    background: #242424;
+
+    border: 1px solid #505050;
+    border-radius: 8px;
+
+    font-family: system-ui, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 16px rgb(0 0 0 / 20%);
+}
+
+#selectsearch-button:hover {
+    background: #383838;
+}
+
+#selectsearch-button:active {
+    background: #505050;
+}

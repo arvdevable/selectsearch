@@ -1,0 +1,38 @@
+{
+      "manifest_version": 3,
+      "name": "SearchSelection",
+      "version": "0.1.0",
+      "description": "Search selected text using your preferred search engine.",
+      "permissions": [
+          "storage"
+      ],
+      "action": {
+        "default_title": "SelectSearch",
+        "default_popup": "popup.html"
+      },
+      "background": {
+        "scripts": [
+            "background.js"
+        ]
+      },
+      "browser_specific_settings": {
+          "gecko": {
+              "id": "selectsearch@lumiscape.dev",
+              "strict_min_version": "109.0"
+          }
+      },
+      "content_scripts": [
+          {
+                "matches": [
+                    "<all_urls>"
+                ],
+                "js": [
+                    "content.js"
+                ],
+                "css": [
+                    "style.css"
+                ],
+                "run_at": "document_idle"
+          }
+    ]
+}
